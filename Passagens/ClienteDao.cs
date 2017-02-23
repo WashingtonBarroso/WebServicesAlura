@@ -17,6 +17,7 @@ namespace Passagens
 
         public Cliente Buscar(string nome)
         {
+            //Qualquer bosta
             var resultado = ClienteDao.clientes.Where(c => c.Nome.Equals(nome)).FirstOrDefault();
             return (Cliente)resultado;
         }
